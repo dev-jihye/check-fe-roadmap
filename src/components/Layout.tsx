@@ -4,8 +4,10 @@ type TProps = {
 
 export default function Layout({children}: TProps) {
   return (
-    <div className="flex justify-center text-center my-10">
-      <div className="w-[500px] lg:w-[800px]">{children}</div>
+    <div className="flex justify-center items-center w-full h-full px-4 py-10">
+      <div className="w-full sm:max-w-lg md:max-w-xl lg:max-w-2xl">
+        {children}
+      </div>
     </div>
   );
 }
