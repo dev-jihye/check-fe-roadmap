@@ -1,10 +1,7 @@
 export default function StartBtn() {
   return (
-    <a
-      href="#"
-      className="text-sm sm:text-base my-8 p-4 bg-slate-200 rounded-md"
-    >
+    <button className="text-sm sm:text-base my-8 px-5 py-4 rounded-md bg-[#e9e069] text-gray-900">
       테스트 시작하기
-    </a>
+    </button>
   );
 }
