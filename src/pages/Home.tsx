@@ -1,26 +1,28 @@
-import img from '../assets/developer.jpeg'
-import gitLogo from '../assets/github.svg'
+import {Link} from 'react-router-dom';
+import img from '../assets/laptop.png';
+import gitLogo from '../assets/github-logo.svg';
+import StartBtn from '../components/StartBtn';
 
 export default function Home() {
   return (
-    <div className="flex justify-center items-center flex-col border px-4">
-      <h1 className="text-2xl mb-10">
-        프론트 개발자가 되기까지 얼마나 남았을까?
+    <div className="flex justify-center items-center flex-col ">
+      <h1 className="text-lg sm:text-2xl mb-10">
+        프론트 개발자가 되기까지 얼마나 왔을까?
       </h1>
       <img className="w-96" src={img} alt="work" />
       {/* 테스트 시작하기 누르면 다음 페이지로 이동 */}
-      <a href="#" className="my-10 p-4 bg-slate-200 rounded-md">
-        테스트 시작하기
-      </a>
+      <Link to="/notice">
+        <StartBtn />
+      </Link>
       <a
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
         href="https://github.com/dev-jihye/check-fe-roadmap"
-        className="flex flex-col justify-center items-center"
+        className="flex flex-col justify-center items-center mt-4"
       >
-        <img src={gitLogo} alt="github" className="w-8 h-8" />
-        <span className="mt-2 text-sm">2022 dev-jihye</span>
+        <img src={gitLogo} alt="github" className="w-10 h-10" />
+        <span className="mt-2 text-xs sm:text-sm">2022 dev-jihye</span>
       </a>
     </div>
-  )
+  );
 }
