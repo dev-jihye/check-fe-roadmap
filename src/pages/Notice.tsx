@@ -1,8 +1,18 @@
 import {SpeakerphoneIcon} from '@heroicons/react/outline';
 import {Link} from 'react-router-dom';
 import StartBtn from '../components/StartBtn';
+import Models from '../data';
 
 export default function Notice() {
+  const {CategoryModel, QuestionModel} = Models();
+  const categories = CategoryModel.map((category) => {
+    return {
+      ...category,
+      questions: QuestionModel.filter(
+        (question) => question.categoryId === category.id,
+      ),
+    };
+  });
   return (
     <div className="px-4 sm:px-20">
       <SpeakerphoneIcon className="w-6 h-6 sm:w-8 sm:h-8 mx-auto my-4" />
@@ -11,14 +21,14 @@ export default function Notice() {
         답변해주세요. 결과에 이어지는 로드맵은 권장사항입니다.
       </p>
       <p className="text-sm sm:text-base">
-        총 문항은 30개로 구성되어 있습니다.
+        총 문항은 {QuestionModel.length}개로 구성되어 있습니다.
       </p>
       <ul className="my-6 text-sm sm:text-base">
-        <li>HTML & CSS 5문항</li>
-        <li>Javascript 5문항</li>
-        <li>Framework 5문항</li>
-        <li>CS 5문항</li>
-        <li>Tools 5문항</li>
+        {categories.map((category) => (
+          <li key={category.id}>
+            {category.title} {category.questions.length}문항
+          </li>
+        ))}
       </ul>
       <div className="flex justify-center items-center">
         <Link to="/question">
