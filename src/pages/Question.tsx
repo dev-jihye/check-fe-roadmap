@@ -1,4 +1,5 @@
 import {useEffect, useState} from 'react';
+import {useNavigate} from 'react-router-dom';
 import ProgressBar from '../components/ProgressBar';
 import Selection from '../components/Selection';
 import Models from '../data';
@@ -17,10 +18,14 @@ const questions = QuestionModel.map((question) => {
 export default function Question() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [question, setQuestion] = useState(questions[currentIndex]);
+  const navigate = useNavigate();
   console.log(questions, 'q');
 
   const handleClick = () => {
     setCurrentIndex(currentIndex + 1);
+    if (currentIndex === questions.length - 1) {
+      navigate('/result');
+    }
   };
 
   useEffect(() => {
