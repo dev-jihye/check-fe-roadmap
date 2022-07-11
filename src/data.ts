@@ -173,8 +173,6 @@ const Models = () => {
   };
 
   initModel();
-  console.log(CategoryModel, QuestionModel);
-
   return {CategoryModel, QuestionModel};
 };
 

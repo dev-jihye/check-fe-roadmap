@@ -25,7 +25,6 @@ export default function Question() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [question, setQuestion] = useState(questions[currentIndex]);
   const navigate = useNavigate();
-  console.log(questions, 'q');
 
   useEffect(() => {
     setQuestion(questions[currentIndex]);
