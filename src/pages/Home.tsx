@@ -2,6 +2,7 @@ import {Link} from 'react-router-dom';
 import img from '../assets/laptop.png';
 import gitLogo from '../assets/github-logo.svg';
 import StartBtn from '../components/StartBtn';
+import {getLsQuestions} from '../utils/utils';
 
 export default function Home() {
   return (
@@ -11,9 +12,16 @@ export default function Home() {
       </h1>
       <img className="w-96" src={img} alt="work" />
       {/* 테스트 시작하기 누르면 다음 페이지로 이동 */}
-      <Link to="/notice">
-        <StartBtn />
-      </Link>
+      <div className="flex flex-col space-y-4 py-4">
+        <Link to="/notice">
+          <StartBtn />
+        </Link>
+        {getLsQuestions() && (
+          <Link to="/result" className="text-sm px-5 py-4">
+            지난 결과 보기 &rarr;
+          </Link>
+        )}
+      </div>
       <a
         target="_blank"
         rel="noopener noreferrer"
