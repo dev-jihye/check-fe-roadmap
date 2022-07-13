@@ -11,7 +11,6 @@ export default function Home() {
         프론트 개발자가 되기까지 얼마나 왔을까?
       </h1>
       <img className="w-96" src={img} alt="work" />
-      {/* 테스트 시작하기 누르면 다음 페이지로 이동 */}
       <div className="flex flex-col space-y-4 py-4">
         <Link to="/notice">
           <StartBtn />
