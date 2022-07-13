@@ -2,14 +2,10 @@ import {useEffect, useState} from 'react';
 import {useNavigate} from 'react-router-dom';
 import ProgressBar from '../components/ProgressBar';
 import Selection from '../components/Selection';
-import Models, {TQuestionModel, TCategoryModel} from '../data';
+import Models from '../data';
+import {TQuestionModelInLS} from '../types/model';
 
 const {CategoryModel, QuestionModel} = Models();
-
-type TQuestionModelInLS = TQuestionModel & {
-  category: TCategoryModel | undefined;
-  score?: number;
-};
 
 export default function Question() {
   const [questions, setQuestions] = useState<TQuestionModelInLS[]>(
@@ -28,14 +24,14 @@ export default function Question() {
 
   useEffect(() => {
     setQuestion(questions[currentIndex]);
-  }, [currentIndex, questions]);
 
-  const handleClick = (score: number) => {
-    if (currentIndex === questions.length - 1) {
+    if (currentIndex === questions.length) {
       localStorage.setItem('questions', JSON.stringify(questions));
       navigate('/result');
     }
+  }, [currentIndex, questions, navigate]);
 
+  const handleClick = (score: number) => {
     setQuestions(
       questions.map((question, index) => {
         if (index === currentIndex) {
