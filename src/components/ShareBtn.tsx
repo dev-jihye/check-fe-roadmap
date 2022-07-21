@@ -27,7 +27,7 @@ export default function ShareBtn({url, text = '공유하기'}: TProps) {
       <button className="mb-2 text-sm">{text}</button>
       <div
         onClick={copy}
-        className="bg-[#30a1d7] p-3 rounded-full cursor-pointer relative"
+        className="bg-[#d81199] p-3 rounded-full cursor-pointer relative"
       >
         <ShareIcon className="w-6 h-6" />
         {isCopied && (

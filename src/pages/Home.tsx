@@ -7,11 +7,11 @@ import {getLsQuestions} from '../utils/utils';
 export default function Home() {
   return (
     <div className="flex justify-center items-center flex-col ">
-      <h1 className="text-lg sm:text-2xl mb-10">
+      <h1 className="text-lg sm:text-2xl mb-8">
         프론트 개발자가 되기까지 얼마나 왔을까?
       </h1>
       <img className="w-96" src={img} alt="work" />
-      <div className="flex flex-col space-y-4 py-4">
+      <div className="flex flex-col space-y-4 py-2">
         <Link to="/notice">
           <StartBtn />
         </Link>
@@ -25,10 +25,11 @@ export default function Home() {
         target="_blank"
         rel="noopener noreferrer"
         href="https://github.com/dev-jihye/check-fe-roadmap"
-        className="flex flex-col justify-center items-center mt-4"
+        className="flex flex-col justify-center items-center mt-6"
       >
         <img src={gitLogo} alt="github" className="w-10 h-10" />
         <span className="mt-2 text-xs sm:text-sm">2022 dev-jihye</span>
+        <span className="text-xs">Image from rawpixel</span>
       </a>
     </div>
   );

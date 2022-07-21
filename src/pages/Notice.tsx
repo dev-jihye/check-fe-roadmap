@@ -18,7 +18,7 @@ export default function Notice() {
       <SpeakerphoneIcon className="w-6 h-6 sm:w-8 sm:h-8 mx-auto my-4" />
       <p className="text-sm sm:text-base mb-6">
         현재 본인의 위치를 알기 위한 자가진단 테스트로 결과에 성실하게
-        답변해주세요. 결과에 이어지는 로드맵은 권장사항입니다.
+        답변해주세요. 결과 링크는 참고 학습 자료로 연결됩니다.
       </p>
       <p className="text-sm sm:text-base">
         총 문항은 {QuestionModel.length}개로 구성되어 있습니다.
