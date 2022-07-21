@@ -3,11 +3,11 @@
 
 ## 🖥 Demo
 
-<img width="837" alt="스크린샷 2022-07-22 오전 12 29 42" src="https://user-images.githubusercontent.com/59763645/180253375-4e7aea59-fe82-45c8-a448-5e7fd365170d.png">
+<img width="537" alt="스크린샷 2022-07-22 오전 12 29 42" src="https://user-images.githubusercontent.com/59763645/180253375-4e7aea59-fe82-45c8-a448-5e7fd365170d.png">
 
 <br>
 
-## ⭐️ About The Project
+## ✏️ About The Project
 
 프론트엔드 개발자 지망생들의 현재 자신의 수준 파악하고 공부의 방향을 모색해나가는 프로젝트 🗺
 
