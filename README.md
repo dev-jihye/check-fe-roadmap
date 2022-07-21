@@ -3,8 +3,8 @@
 
 ## 🖥 Demo
 
-<img width="437" alt="스크린샷 2022-07-22 오전 12 29 42" src="https://user-images.githubusercontent.com/59763645/180253375-4e7aea59-fe82-45c8-a448-5e7fd365170d.png">
-<img width="450" alt="스크린샷 2022-07-22 오전 1 44 41" src="https://user-images.githubusercontent.com/59763645/180268823-93f8985a-1894-4fec-a946-a64f9c0b2c67.png">
+<img width="407" alt="스크린샷 2022-07-22 오전 12 29 42" src="https://user-images.githubusercontent.com/59763645/180253375-4e7aea59-fe82-45c8-a448-5e7fd365170d.png">
+<img width="382" alt="스크린샷 2022-07-22 오전 1 44 41" src="https://user-images.githubusercontent.com/59763645/180268823-93f8985a-1894-4fec-a946-a64f9c0b2c67.png">
 
 
 <br>
