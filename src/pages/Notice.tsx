@@ -17,11 +17,11 @@ export default function Notice() {
     <div className="px-4 sm:px-20">
       <SpeakerphoneIcon className="w-6 h-6 sm:w-8 sm:h-8 mx-auto my-4" />
       <p className="text-sm sm:text-base mb-6">
-        현재 본인의 위치를 알기 위한 자가진단 테스트로 결과에 성실하게
-        답변해주세요. 결과 링크는 참고 학습 자료로 연결됩니다.
+        프론트엔드 스킬 체크를 알기 위한 자가진단 테스트로 결과에 성실하게
+        답변해주세요. 테스트 결과는 학습 자료로 연결됩니다.
       </p>
       <p className="text-sm sm:text-base">
-        총 문항은 {QuestionModel.length}개로 구성되어 있습니다.
+        총 문항은 {QuestionModel.length}개 입니다.
       </p>
       <ul className="my-6 text-sm sm:text-base">
         {categories.map((category) => (

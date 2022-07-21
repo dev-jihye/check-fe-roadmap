@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="flex justify-center items-center flex-col ">
       <h1 className="text-lg sm:text-2xl mb-8">
-        프론트 개발자가 되기까지 얼마나 왔을까?
+        프론트엔드 개발자가 되기까지 얼마나 왔을까?
       </h1>
       <img className="w-96" src={img} alt="work" />
       <div className="flex flex-col space-y-4 py-2">
