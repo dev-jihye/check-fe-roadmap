@@ -67,13 +67,13 @@
 
 ## Javascript
 
-- 자바스크립트가 무엇이고 어떤 역할을 하는지 알고 있다.
+- 자바스크립트가 무엇이고 어떤 역할을 하는지 알고 있다.
 
   - [JavaScript가 뭔가요? - MDN](https://developer.mozilla.org/ko/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
 
   - [자바스크립트란 - javascript.info](https://ko.javascript.info/intro)
 
-- DOM에 대해 이해하고 조작할 수 있다.
+- DOM에 대해 이해하고 조작할 수 있다.
 
   - [브라우저: 문서 - javascript.info](https://ko.javascript.info/document)
 
