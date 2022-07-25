@@ -12,6 +12,7 @@
 
 프론트엔드 개발자 지망생들의 현재 자신의 수준 파악하고 공부의 방향을 모색해나가는 프로젝트 🗺
 
+
 <br>
 
 ## ⚙ 개발 환경
@@ -19,6 +20,14 @@
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+
+<br>
+
+## 🍻 프로젝트를 끝내고 주저리
+
+[20일동안 한 프로젝트에 매달린 썰](https://jihye-dev.tistory.com/43)
+
 
 <br>
 
